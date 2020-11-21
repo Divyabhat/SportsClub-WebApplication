@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Club Membership</title>
+    <link rel="stylesheet" href="club.css">
+
+
+    <meta charset="UTF-8">
+
+</head>
+
+<body id ="main">
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="active"><a href="membership.html">Membership</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+        <div class="center">
+            <section class="signup">
+                <h1><Strong>Apply Now!</Strong></h1>
+                <label>Name:</label><input type="text" name="name" id="name">
+                <label>Email:</label><input type="email" name="email" id="email">
+                <label>Type:</label>
+                <select id="value1">
+                    <option value="Sports only" >Sports only </option>
+                    <option value="Sports and fitness" >Sports and fitness</option>
+                    <option value="Yoga class" >Yoga class</option>
+                </select>
+                <label>Comments:</label><textarea name="comment" id="comment" maxlength="500"></textarea>
+
+                <div class="Signup">
+                    <button type="submit" onclick="member()">Sign Me Up!</button>
+                </div>
+
+            </section>
+
+            <section id="ThanksDialog" class="ShowDialog">
+
+            </section>
+        </div>
+    </main>
+    <script>
+        function member() {
+            //  var data = document.createElement("DIALOG");
+
+            var h = document.createElement("H1");
+            var t = document.createTextNode("Thanks for signing up!");
+            h.appendChild(t);
+            document.getElementById("ThanksDialog").appendChild(h);
+
+            var para = document.createElement("P");
+
+            
+            var msg = " Name:" + document.getElementById("name").value;
+            msg += ",Email:" + document.getElementById("email").value;
+            msg += ",Type:" + document.getElementById("value1").value;
+            msg += ",Comments:" + document.getElementById("comment").value;
+            para.innerHTML = msg;
+            document.getElementById("ThanksDialog").appendChild(para);
+
+
+
+            var x = document.createElement("BUTTON");
+            var t = document.createTextNode("close");
+    
+            x.appendChild(t);
+            document.body.appendChild(x);
+            document.getElementById("ThanksDialog").appendChild(x);
+            
+            
+             //document.getElementById("main").style.opacity = "0.4";
+
+
+            x.id = "someID";
+            document.getElementById("someID").addEventListener("click", function() {
+                var element = document.getElementById("ThanksDialog");
+                element.classList.remove("ShowDialog");
+                element.style.display = "none";
+                //document.getElementById("main").style.opacity = "1";
+              });
+            
+            
+                
+
+     }
+    </script>
+   
+</body>
+
+</html>

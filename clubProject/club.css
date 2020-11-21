@@ -1,0 +1,230 @@
+p {
+    background-color: white;
+    font-family: monospace;
+}
+
+ul {
+    font-family: monospace;
+    color: chocolate;
+    padding: 2em;
+    border-width: medium;
+    border-color: aqua;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+body {
+    background-color: #70A9D5;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    border: 7px solid skyblue;
+    padding: 10px;
+    background-color: white;
+    border-radius: 2em;
+}
+
+
+.menu {
+    margin:.5em;
+    display: flex;
+    align-self: left;
+    max-width: 10%;
+    border: 7px solid skyblue;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 1em;
+    display: flex;
+    align-self: left;
+}
+
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+li.active {
+    background-color: red;
+}
+
+
+
+#about {
+    font-family: fantasy;
+    font-style: bold;
+    color: midnightblue;
+}
+
+
+#activities {
+    font-family: sans-serif;
+    font-style: bold;
+    color: midnightblue;
+}
+
+
+
+.centerLogin {
+    margin: 7em;
+    /*  width: 75%;
+    height: 30em;
+   
+    align-content: center;
+    align-items: center;
+    */
+    border: 5px solid skyblue;
+    padding: 10px;
+    background-color: white;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+h2 {
+    font-family: monospace;
+    color: black;
+}
+
+
+.copyright {
+    background-color: #70A9D5;
+}
+
+
+.image-fitness {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 400px;
+    height: 400px;
+
+}
+
+
+#title {
+    text-align: center;
+}
+
+
+.form {
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    padding: 12px;
+    font-size: 23px;
+}
+
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 26px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+#index {
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 60px;
+    font-style: bold;
+    color: midnightblue;
+}
+
+
+button {
+    background-color: limegreen;
+    border: 1px solid black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    grid-column: 2 / 3;
+}
+
+
+td {
+    border: 1px solid blue;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+.signup {
+    align-content: center;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template: 10em 10em 10em;
+    margin: 5em;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
+    grid-gap: 16px;
+}
+
+
+input {
+    grid-column: 2 / 3;
+    padding: 2px;
+}
+
+
+label {
+    justify-self: end;
+    font-style: italic;
+    cursor: pointer;
+    grid-column: 1 / 2;
+
+}
+
+
+.Showdialog {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.thanks-content {
+    background-color: #fefefe;
+    margin: 10em;
+    ;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
